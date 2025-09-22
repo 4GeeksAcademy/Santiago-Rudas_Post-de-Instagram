@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ejemplos — Contenedores tipo Instagram</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+
+  <main class="container">
+    <article class="card post-card" aria-labelledby="post1">
+      <header class="post-header">
+        <img class="avatar" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200&q=80" alt="avatar usuario">
+        <div class="meta">
+          <strong class="username">santiago.dev</strong>
+          <span class="location">Panama City</span>
+        </div>
+        <button class="more" aria-label="Más opciones">⋯</button>
+      </header>
+      <div class="post-image-wrapper">
+        <img class="post-image" src="https://images.unsplash.com/photo-1504198453319-5ce911bafcde?w=1200&q=80" alt="foto de ejemplo">
+        <div class="image-badge">NUEVO</div>
+      </div>
+      <div class="post-actions">
+        <div class="left">
+          <button class="icon">❤</button>
+          <button class="icon">💬</button>
+          <button class="icon">✈</button>
+        </div>
+        <div class="right">10h</div>
+      </div>
+      <div class="post-caption" id="post1">
+        <p><strong>santiago.dev</strong> Un atardecer desde la ventana. <span class="more-text">#photography #react</span></p>
+      </div>
+    </article>
+
+    <section class="card gallery-card">
+      <h2 class="card-title">Mini galería</h2>
+      <div class="grid">
+        <img src="https://images.unsplash.com/photo-1499084732479-de2c02d45fc4?w=600&q=60" alt="">
+        <img src="https://images.unsplash.com/photo-1517816743773-6e0fd518b4a6?w=600&q=60" alt="">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=600&q=60" alt="">
+        <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=600&q=60" alt="">
+      </div>
+      <p class="gallery-note">Un ejemplo con <code>display: grid</code> y <code>gap</code>.</p>
+    </section>
+
+    <aside class="card float-card">
+      <h2 class="card-title">Float vs Flex</h2>
+      <img class="float-img" src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&q=60" alt="">
+      <div class="float-text">
+        <p>Este ejemplo usa <code>float: left</code> para que la imagen flote y el texto envuelva el contenido. Es una técnica clásica, útil para compatibilidad o efectos simples.</p>
+      </div>
+      <div class="clearfix"></div>
+    </aside>
+
+    <article class="card overlay-card">
+      <div class="overlay-image" style="background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&q=80')">
+        <div class="overlay-label">Hot Spot</div>
+      </div>
+      <div class="overlay-body">
+        <h3 class="card-title">Overlay con position</h3>
+        <p>Uso de <code>position: relative</code> en el contenedor y <code>position: absolute</code> para etiquetas flotantes.</p>
+      </div>
+    </article>
+
+    <section class="card selectors-card">
+      <h2 class="card-title">Selectores CSS</h2>
+      <ul class="list">
+        <li data-important="true">Elemento con atributo <code>[data-important]</code></li>
+        <li>Segundo elemento con <code>:nth-child(2)</code></li>
+        <li>Hover en <code>li:hover</code> muestra pseudo-clase</li>
+        <li>Selector hijo directo <code>.selectors-card &gt; .special</code></li>
+      </ul>
+      <div class="special">Soy un hijo directo (.special)</div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Hecho como ejercicio — demuestra bordes, margin, padding, overflow y distintos modelos de layout.</p>
+  </footer>
+</body>
+</html>
